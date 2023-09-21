@@ -13,7 +13,7 @@ setup(
     long_description_content_type="text/markdown",
     url="https://github.com/MiniXC/simple_hifigan",
     packages=find_namespace_packages(),
-    package_dir={"": "simple_hifigan"},
+    package_dir={"": "src"},
     package_data={
         "simple_hifigan.data": [
             "*.pth.tar",
