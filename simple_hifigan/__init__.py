@@ -24,12 +24,12 @@ class Synthesiser:
         model="universal",
     ):
         self.device = device
-        with open(Path(__file__).parent / "models" / "config.json", "r") as f:
+        with open(Path(__file__).parent / "data" / "config.json", "r") as f:
             config = json.load(f)
         config = AttrDict(config)
         vocoder = Generator(config)
         ckpt = torch.load(
-            Path(__file__).parent / "models" / f"generator_{model}.pth.tar",
+            Path(__file__).parent / "data" / f"generator_{model}.pth.tar",
             map_location=torch.device(device),
         )
         vocoder.load_state_dict(ckpt["generator"])
