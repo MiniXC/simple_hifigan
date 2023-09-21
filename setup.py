@@ -1,4 +1,4 @@
-from setuptools import setup, find_packages
+from setuptools import setup, find_packages, find_namespace_packages
 
 with open("README.md", "r") as fh:
     long_description = fh.read()
@@ -12,11 +12,12 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/MiniXC/simple_hifigan",
-    packages=find_packages(),
+    packages=find_namespace_packages(),
+    package_dir={"": "simple_hifigan"},
     package_data={
-        "simple_hifigan": [
-            "models/*.pth.tar",
-            "config.json",
+        "simple_hifigan.data": [
+            "*.pth.tar",
+            "*.json",
         ],
     },
     classifiers=[
