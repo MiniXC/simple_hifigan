@@ -12,7 +12,7 @@ setup(
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/MiniXC/simple_hifigan",
-    packages=find_namespace_packages(),
+    packages=find_namespace_packages(where="src"),
     package_dir={"": "src"},
     package_data={
         "simple_hifigan.data": [
