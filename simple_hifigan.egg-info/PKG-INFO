@@ -1,0 +1,12 @@
+Metadata-Version: 2.1
+Name: simple-hifigan
+Version: 0.1.0
+Summary: A simple way to use HiFi-GAN.
+Home-page: https://github.com/MiniXC/simple_hifigan
+Author: Christoph Minixhofer
+Author-email: christoph.minixhofer@gmail.com
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown

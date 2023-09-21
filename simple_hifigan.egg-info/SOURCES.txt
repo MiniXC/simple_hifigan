@@ -1,0 +1,8 @@
+README.md
+setup.py
+simple_hifigan/__init__.py
+simple_hifigan/models.py
+simple_hifigan.egg-info/PKG-INFO
+simple_hifigan.egg-info/SOURCES.txt
+simple_hifigan.egg-info/dependency_links.txt
+simple_hifigan.egg-info/top_level.txt
