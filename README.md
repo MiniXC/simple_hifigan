@@ -1,5 +1,7 @@
 # Simple HiFiGAN
 
+Please cite [the HiFiGAN paper](https://arxiv.org/abs/2010.05646) when using this.
+
 A simple wrapper for the this [HiFiGAN Implementation](
     https://github.com/ming024/FastSpeech2/blob/master/hifigan
 ). This wrapper adds a simple interface to the model.
