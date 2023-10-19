@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setup(
     name="simple_hifigan",
-    version="0.1.0",
+    version="0.1.1",
     author="Christoph Minixhofer",
     author_email="christoph.minixhofer@gmail.com",
     description="A simple way to use HiFi-GAN.",

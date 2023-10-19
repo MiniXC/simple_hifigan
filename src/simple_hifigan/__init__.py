@@ -120,8 +120,10 @@ class Synthesiser:
     def __call__(self, mel):
         if isinstance(mel, np.ndarray):
             mel = torch.from_numpy(mel).float()
-        mel = torch.unsqueeze(mel.T, 0)
-        result = self.vocoder(mel.to(self.device)).squeeze(1).cpu().detach().numpy()
+        if len(mel.shape) == 2:
+            mel = mel.unsqueeze(0)
+        mel = mel.to(self.device)
+        result = self.vocoder(mel).squeeze(1).cpu().detach().numpy()
         result = (result * 32768.0).astype("int16")
 
         return result
